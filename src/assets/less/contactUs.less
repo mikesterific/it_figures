@@ -1,9 +1,11 @@
 .contact-us {
   background-color: #1d1b70;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 3px #000;
+  background-size: cover;
+  background-position: center;
   h3 {
     color: white;
   }
@@ -11,26 +13,53 @@
     color: white;
   }
 }
+
 .contact-content {
   max-width: 600px;
   margin: 0 auto;
 }
-.contact-method {
-  margin: 2rem 0;
+
+.contact-intro {
+  margin-bottom: 2rem;
 }
+
+.contact-method {
+  margin: 1rem 0;
+}
+
 .contact-method h3 {
   color: #fff;
   margin-bottom: 0.5rem;
 }
+
 .contact-method p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+
 .contact-cta {
   font-style: italic;
   margin-top: 2rem;
 }
+
 .contact-methods {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-us {
+    padding: 2rem 3rem;
+  }
+
+  .contact-methods {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .contact-method p {
+    font-size: 1.2rem;
+  }
 }

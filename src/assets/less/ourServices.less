@@ -3,20 +3,26 @@
   background-color: #df4b38;
   color: #fff;
   border-bottom: 3px solid #471711;
+
   .our-services-banner {
     margin-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
   }
+
   .container {
     h2 {
       .open-sans-light();
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
     h3 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
       .open-sans-light();
     }
+
     p {
       .open-sans-light();
       font-size: 1rem;
@@ -27,12 +33,69 @@
       &.two-columns {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        gap: 1rem 4rem;
       }
     }
 
     .service-item {
-      // margin-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-detail {
+    padding: 2rem;
+
+    .container {
+      .services-grid {
+        &.two-columns {
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-detail {
+    padding: 1.5rem;
+
+    .container {
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      .services-grid {
+        &.two-columns {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services-detail {
+    padding: 1rem;
+
+    .container {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 }

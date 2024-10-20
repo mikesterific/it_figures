@@ -9,7 +9,7 @@ const ContactUs = () => {
       <div className="container">
         <div className="contact-content">
           <h2>Let's Connect</h2>
-          <p>
+          <p className="contact-intro">
             At It Figures Accounting, we're passionate about helping small
             businesses thrive. We love diving into numbers and finding ways to
             make your financial picture clearer and brighter. Our work isn't

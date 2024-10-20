@@ -1,32 +1,60 @@
 @import './font.less';
+
 .threeColsWrap {
-  padding: 3rem;
+  padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   .open-sans-light();
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    gap: 3rem;
+  }
+
   h2 {
     margin-bottom: 1rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #df4b38;
     .open-sans-light();
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
   }
+
   section {
     background-color: #fff;
-    // border: 1px solid #df4b38;
     border-bottom: 10px solid #df4b38;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 2rem;
+    padding: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding: 2rem;
+    }
+
     > ul {
       padding-left: 0;
       li {
         list-style-type: none;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
+
+        @media (min-width: 768px) {
+          margin-bottom: 1rem;
+        }
       }
     }
   }
+
   .checkList {
     padding: 0;
     li {

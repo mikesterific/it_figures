@@ -5,7 +5,7 @@ const OurApproach = () => {
     <section
       id="our-approach"
       className="our-approach"
-      style={{ scrollMarginTop: '62px' }}
+      style={{ scrollMarginTop: '62px', backgroundImage: `url(${tiles})` }}
     >
       <div className="container">
         <h2>Our Approach</h2>
