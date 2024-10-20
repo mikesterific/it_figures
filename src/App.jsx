@@ -17,9 +17,9 @@ function App() {
         </main>
       </Router>
 
-      <footer>
+      <footer className="footer">
         {/* Add your footer content here */}
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p>&copy; 2024 IT Figures Accounting. All rights reserved.</p>
       </footer>
     </div>
   );

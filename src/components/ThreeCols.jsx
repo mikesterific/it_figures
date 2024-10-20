@@ -8,9 +8,10 @@ const ThreeCols = () => {
           <li>Financial statement preparation</li>
           <li>Payroll processing</li>
           <li>Accounts payable/receivable</li>
-          <li>Tax preparation assistance</li>
+          <li>Tax Readiness Preparation</li>
+          <li>CPA Collaboration</li>
         </ul>
-        <a href="#" className="link">
+        <a href="#our-services" className="link btn">
           Learn More
         </a>
       </section>
@@ -24,7 +25,7 @@ const ThreeCols = () => {
           <li>Time-saving solutions to help you focus on growth</li>
           <li>Flexible, remote services</li>
         </ul>
-        <a href="#" className="link">
+        <a href="#our-approach" className="link btn">
           Our Approach
         </a>
       </section>
@@ -39,7 +40,7 @@ const ThreeCols = () => {
           <li>📞 Phone: (555) 123-4567</li>
           <li>✉️ Email: info@itfiguresaccounting.com</li>
         </ul>
-        <a href="#" className="cta-button">
+        <a href="#contact-us" className=" btn cta-button">
           Contact Us
         </a>
       </section>

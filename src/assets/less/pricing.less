@@ -1,3 +1,4 @@
+@import './variables.less';
 .pricing {
   background-color: #f0f9ff;
   padding: 4rem 3rem;
@@ -7,11 +8,21 @@
   h2 {
     color: #df4b38;
   }
+  h4 {
+    color: #2563eb;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
 }
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+.pricing-intro {
+  margin-bottom: 2rem;
+  width: 50%;
 }
 .pricing-tier {
   background-color: white;
@@ -40,13 +51,31 @@
   margin-bottom: 0.5rem;
 }
 .pricing-cta {
-  display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 9999px;
-  text-align: center;
+  .btn();
+}
+.pricing-cta-wrap {
+  margin-top: 2rem;
+}
+.pricing-cta-content {
+  p:first-child {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
+.pricing-intro-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-intro-column {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .pricing-intro-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1024px) {

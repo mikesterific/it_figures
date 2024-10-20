@@ -7,13 +7,16 @@ const TopMenu = () => {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="#our-services">Services</a>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <a href="#our-approach">Our Approach</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>

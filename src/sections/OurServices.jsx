@@ -1,15 +1,19 @@
+import ourServicesBanner from '../assets/images/ourServices.jpg';
+
 const OurServices = () => {
   return (
-    <section className="services-detail">
+    <section
+      id="our-services"
+      className="services-detail"
+      style={{ scrollMarginTop: '62px' }}
+    >
       <div className="container">
         <h2>Our Services</h2>
-        {/* <p>
-          At It Figures Accounting, we offer a comprehensive range of
-          bookkeeping services tailored to meet the needs of small businesses
-          and startups. Our goal is to provide you with accurate, timely, and
-          insightful financial management, allowing you to focus on growing your
-          business.
-        </p> */}
+        <img
+          className="our-services-banner"
+          src={ourServicesBanner}
+          alt="Our Services"
+        />
         <div className="services-grid two-columns">
           <div className="service-item">
             <h3>Monthly Bookkeeping</h3>
@@ -30,12 +34,14 @@ const OurServices = () => {
             </p>
           </div>
           <div className="service-item">
-            <h3>Payroll Processing</h3>
+            <h3>Payroll Solutions</h3>
             <p>
-              Our payroll services cover everything from calculating wages and
-              deductions to preparing and filing payroll taxes. We ensure your
-              employees are paid accurately and on time, while keeping you
-              compliant with all relevant regulations.
+              We streamline your payroll process by helping you select, set up,
+              and optimize the right payroll service for your business. Our
+              expertise covers integration with your accounting software,
+              automation for efficiency, and compliance guidance. We empower you
+              to manage payroll effectively, saving time and ensuring accuracy,
+              so you can focus on growing your business.
             </p>
           </div>
           <div className="service-item">
@@ -48,13 +54,24 @@ const OurServices = () => {
             </p>
           </div>
           <div className="service-item">
-            <h3>Tax Preparation Assistance</h3>
+            <h3>Tax Readiness Preparation</h3>
             <p>
               While we don't directly prepare taxes, we provide valuable
               assistance in organizing and preparing your financial information
               for tax purposes. This includes generating necessary reports and
               working closely with your tax professional to ensure a smooth tax
               filing process.
+            </p>
+          </div>
+          <div className="service-item">
+            <h3>CPA Collaboration</h3>
+            <p>
+              Trusted by CPAs: Already have a CPA? We enjoy collaborating with
+              your current tax professional.
+            </p>
+            <p>
+              Need a CPA? We can help you choose one, whether from our trusted
+              network or by finding a qualified professional in your area.
             </p>
           </div>
         </div>

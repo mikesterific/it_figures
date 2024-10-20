@@ -1,12 +1,29 @@
 const Pricing = () => {
   return (
-    <section className="pricing">
+    <section
+      id="pricing"
+      className="pricing"
+      style={{ scrollMarginTop: '62px' }}
+    >
       <div className="container">
         <h2>Our Bookkeeping Packages</h2>
-        <p>
-          Choose the package that best fits your business needs. All packages
-          include our expertise and commitment to accurate, timely bookkeeping.
-        </p>
+        <div className="pricing-intro-container">
+          <div className="pricing-intro-column">
+            <p>
+              Choose the package that best suits your business needs! Each of
+              our packages comes with our dedicated expertise and a commitment
+              to providing accurate, timely bookkeeping.
+            </p>
+          </div>
+          <div className="pricing-intro-column">
+            <p>
+              If you find that our standard packages don't quite fit your budget
+              or specific requirements, don't hesitate to reach out. We're here
+              to create a tailored, cost-effective solution as unique as your
+              business—because every unicorn deserves a custom approach!
+            </p>
+          </div>
+        </div>
         <div className="pricing-grid">
           <div className="pricing-tier">
             <h3>Tier 1: Basic Bookkeeping</h3>
@@ -18,9 +35,6 @@ const Pricing = () => {
               <li>Basic financial statements</li>
               <li>30-minute monthly consultation</li>
             </ul>
-            <a href="#" className="pricing-cta">
-              Get Started
-            </a>
           </div>
           <div className="pricing-tier">
             <h3>Tier 2: Small Business Package</h3>
@@ -33,9 +47,6 @@ const Pricing = () => {
               <li>Basic accounts payable management</li>
               <li>1-hour monthly consultation</li>
             </ul>
-            <a href="#" className="pricing-cta">
-              Get Started
-            </a>
           </div>
           <div className="pricing-tier">
             <h3>Tier 3: Growing Business Package</h3>
@@ -50,9 +61,6 @@ const Pricing = () => {
               <li>Quarterly financial review</li>
               <li>90-minute monthly consultation</li>
             </ul>
-            <a href="#" className="pricing-cta">
-              Get Started
-            </a>
           </div>
           <div className="pricing-tier">
             <h3>Tier 4: Comprehensive Business Package</h3>
@@ -68,10 +76,22 @@ const Pricing = () => {
               <li>Quarterly financial review & planning</li>
               <li>2-hour monthly consultation</li>
             </ul>
-            <a href="#" className="pricing-cta">
-              Get Started
-            </a>
           </div>
+        </div>
+      </div>
+      <div className="pricing-cta-wrap">
+        <h4>Customized Solutions for your budget</h4>
+        <div className="pricing-cta-content">
+          <p>
+            Don&#39;t see a perfect fit? We understand that every business is
+            unique. Contact us to discuss a tailored package that meets your
+            specific requirements and budget. Our flexible approach ensures you
+            get the bookkeeping support you need without paying for services you
+            don&#39;t.
+          </p>
+          <a href="#contact" className="btn">
+            Get in touch for a personalized quote
+          </a>
         </div>
       </div>
     </section>

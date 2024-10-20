@@ -1,13 +1,19 @@
+import tiles from '../assets/images/brick.jpg';
+
 const OurApproach = () => {
   return (
-    <section className="our-approach">
+    <section
+      id="our-approach"
+      className="our-approach"
+      style={{ scrollMarginTop: '62px', backgroundImage: `url(${tiles})` }}
+    >
       <div className="container">
         <h2>Our Approach</h2>
-        <p>
+        {/* <p>
           At It Figures Accounting, we believe in providing more than just
           numbers. Our approach is designed to support your business growth
           while offering affordable, personalized bookkeeping solutions.
-        </p>
+        </p> */}
         <div className="approach-grid">
           <div className="approach-item">
             <h3>Affordable Pricing</h3>
