@@ -1,6 +1,11 @@
+import contact from '../assets/images/connect.jpg';
 const ContactUs = () => {
   return (
-    <section id="contact" className="contact-us">
+    <section
+      id="contact"
+      className="contact-us"
+      style={{ backgroundImage: `url(${contact})` }}
+    >
       <div className="container">
         <div className="contact-content">
           <h2>Let's Connect</h2>

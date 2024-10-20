@@ -26,7 +26,7 @@ const Pricing = () => {
         </div>
         <div className="pricing-grid">
           <div className="pricing-tier">
-            <h3>Tier 1: Basic Bookkeeping</h3>
+            <h3>Basic Bookkeeping</h3>
             <div className="price">$100/month</div>
             <ul className="pricing-features">
               <li>Up to 50 transactions/month</li>
@@ -37,7 +37,7 @@ const Pricing = () => {
             </ul>
           </div>
           <div className="pricing-tier">
-            <h3>Tier 2: Small Business Package</h3>
+            <h3>Small Business</h3>
             <div className="price">$250/month</div>
             <ul className="pricing-features">
               <li>Up to 150 transactions/month</li>
@@ -49,7 +49,7 @@ const Pricing = () => {
             </ul>
           </div>
           <div className="pricing-tier">
-            <h3>Tier 3: Growing Business Package</h3>
+            <h3>Growing Business</h3>
             <div className="price">$375/month</div>
             <ul className="pricing-features">
               <li>Up to 300 transactions/month</li>
@@ -63,7 +63,7 @@ const Pricing = () => {
             </ul>
           </div>
           <div className="pricing-tier">
-            <h3>Tier 4: Comprehensive Business Package</h3>
+            <h3>Comprehensive Business</h3>
             <div className="price">$500/month</div>
             <ul className="pricing-features">
               <li>Up to 500 transactions/month</li>

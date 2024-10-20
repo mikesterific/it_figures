@@ -7,6 +7,9 @@ const TopMenu = () => {
           <a href="#">Home</a>
         </li>
         <li>
+          <a href="#value">Value</a>
+        </li>
+        <li>
           <a href="#our-services">Services</a>
         </li>
         <li>

@@ -1,6 +1,10 @@
 const ThreeCols = () => {
   return (
-    <div className="threeColsWrap container section-grid">
+    <div
+      className="threeColsWrap container section-grid"
+      id="value"
+      style={{ scrollMarginTop: '62px' }}
+    >
       <section>
         <h2>Our Services</h2>
         <ul>
@@ -36,11 +40,16 @@ const ThreeCols = () => {
           Ready to simplify your bookkeeping? Contact us for a free consultation
           or to sign up for one of our affordable packages.
         </p>
-        <ul>
+        <ul style={{ marginTop: '1rem' }}>
           <li>📞 Phone: (555) 123-4567</li>
-          <li>✉️ Email: info@itfiguresaccounting.com</li>
+          <li>
+            ✉️ Email:{' '}
+            <a href="mailto:info@itfiguresaccounting.com">
+              info@itfiguresaccounting.com
+            </a>
+          </li>
         </ul>
-        <a href="#contact-us" className=" btn cta-button">
+        <a href="#contact" className=" btn cta-button">
           Contact Us
         </a>
       </section>
