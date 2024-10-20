@@ -1,0 +1,43 @@
+@import './font.less';
+.threeColsWrap {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  .open-sans-light();
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #df4b38;
+    .open-sans-light();
+  }
+  section {
+    background-color: #fff;
+    // border: 1px solid #df4b38;
+    border-bottom: 10px solid #df4b38;
+    padding: 2rem;
+    > ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .checkList {
+    padding: 0;
+    li {
+      list-style-type: none;
+      padding-left: 18px;
+      position: relative;
+      &::before {
+        content: '✓';
+        margin-right: 0.5rem;
+        color: green;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

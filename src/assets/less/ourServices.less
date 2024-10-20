@@ -1,0 +1,34 @@
+.services-detail {
+  padding: 3rem;
+  background-color: #df4b38;
+  color: #fff;
+  .container {
+    h2 {
+      .open-sans-light();
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      .open-sans-light();
+    }
+    p {
+      .open-sans-light();
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .services-grid {
+      &.two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+      }
+    }
+
+    .service-item {
+      // margin-bottom: 2rem;
+    }
+  }
+}
